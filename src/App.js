@@ -1,5 +1,5 @@
 import './App.css';
-import {  BrowserRouter as Router,Route } from "react-router-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
 
 
@@ -11,8 +11,8 @@ import PreNavBar from './components/PreNavBar.js';
 import NavBar from "./components/NavBar.js";
 import Slider from "./components/Slider.js";
 import Offers from "./components/Offers.js";
-import Heading  from "./components/Heading.js"
-import StarProduct from "./components/StarProduct.js"
+// import Heading  from "./components/Heading.js"
+// import StarProduct from "./components/StarProduct.js"
 // import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.js"
 // import HotAccessories from "./components/HotAccessories.js"
 // import ProductReviews from "./components/ProductReviews.js"
@@ -26,21 +26,21 @@ import StarProduct from "./components/StarProduct.js"
 function App() {
 
   return (
-  <Router>
-       <PreNavBar/>
-       <NavBar />
-            
-        {/* <NavOptios miPhones={data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop={data.laptop} fitnessAndLifeStyle={data.fitnessAndLifeStyle} home={data.home} audio={data.audio}  accessories={data.accessories}/> */}
+    <Router>
+      <PreNavBar />
+      <NavBar />
+
+      {/* <NavOptios miPhones={data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop={data.laptop} fitnessAndLifeStyle={data.fitnessAndLifeStyle} home={data.home} audio={data.audio}  accessories={data.accessories}/> */}
 
 
-       <Slider start={data.banner.start} />
-       <Offers offer={data.offer} />
-       <Heading text="STAR PRODUCTS"/>
-         <StarProduct starProduct={data.starProduct} />
-        <Heading text="HOT ACCESSORIES" />
-       {/* <HotAccessoriesMenu /> */}
+      <Slider start={data.banner.start} />
+      <Offers offer={data.offer} />
+      <Heading text="STAR PRODUCTS" />
+      <StarProduct starProduct={data.starProduct} />
+      <Heading text="HOT ACCESSORIES" />
+      {/* <HotAccessoriesMenu /> */}
 
-       {/* <Route exact path="/music">
+      {/* <Route exact path="/music">
           <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}  />
        </Route>
 
@@ -63,7 +63,7 @@ function App() {
 
        <Heading text="PRODUCT REVIEWS"/>  */}
 
-       {/*<ProductReviews productReviews={data.productReviews}/>
+      {/*<ProductReviews productReviews={data.productReviews}/>
 
        <Heading text="VIDEOS" />
       
@@ -74,7 +74,7 @@ function App() {
        <Banner  banner={data.banner}/>
 
        <Footer footer={data.footer} /> */}
-   </Router>
+    </Router>
 
   );
 }
