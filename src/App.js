@@ -11,9 +11,9 @@ import PreNavBar from './components/PreNavBar.js';
 import NavBar from "./components/NavBar.js";
 import Slider from "./components/Slider.js";
 import Offers from "./components/Offers.js";
-// import Heading  from "./components/Heading.js"
+import Heading from "./components/Heading.js"
 // import StarProduct from "./components/StarProduct.js"
-// import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.js"
+// import HotAccessoriesMenu from "./components/HotAccessoriesMenu.js"
 // import HotAccessories from "./components/HotAccessories.js"
 // import ProductReviews from "./components/ProductReviews.js"
 // import Videos from "./components/Videos.js"
@@ -38,7 +38,7 @@ function App() {
       <Heading text="STAR PRODUCTS" />
       <StarProduct starProduct={data.starProduct} />
       <Heading text="HOT ACCESSORIES" />
-      {/* <HotAccessoriesMenu /> */}
+      <HotAccessoriesMenu />
 
       {/* <Route exact path="/music">
           <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}  />
